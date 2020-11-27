@@ -1,5 +1,4 @@
 import React from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '../../components/Header';
 import {
   Container,
@@ -11,6 +10,7 @@ import {
 } from 'react-bootstrap';
 import { ContentContainer, Form, AdsBlock } from './styles';
 import ShortnerService from '../../services/shortenerService';
+import vars from '../../configs/vars';
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -86,7 +86,7 @@ class HomePage extends React.Component {
                   <InputGroup className='mb-3'>
                     <FormControl
                       autoFocus={true}
-                      defaultValue={`https://tupi.link/${code}`}
+                      defaultValue={vars.HOST_APP + code}
                       ref={(input) => this.inputURL = input}
                     />
                     <InputGroup.Append>
@@ -98,7 +98,7 @@ class HomePage extends React.Component {
                     </InputGroup.Append>
                   </InputGroup>
                   <p>
-                    Para acompanhar as estatísticas, acesse https://tupi.link/{code}
+                    Para acompanhar as estatísticas, acesse {vars.HOST_APP + code}/stats
                   </p>
                 </>
               )
@@ -107,7 +107,7 @@ class HomePage extends React.Component {
           </Form>
         </ContentContainer>
         <ContentContainer>
-          <AdsBlock>Adsense</AdsBlock>
+          <AdsBlock>AdSense</AdsBlock>
         </ContentContainer>
       </Container>
     );

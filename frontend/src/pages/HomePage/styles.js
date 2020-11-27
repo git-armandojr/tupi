@@ -17,7 +17,7 @@ export const Form = styled.form`
 
 export const AdsBlock = styled.div`
   border: solid 1px #f7f7f7;
-  background_color: #f1f1f1;
+  background-color: #f1f1f1;
   text-center;
   padding: 2rem;
   flex: 0 0 80%;
