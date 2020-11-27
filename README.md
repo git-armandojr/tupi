@@ -1,2 +1,5 @@
-# tupi
-A simple micro-SaaS for URL shortening.
+# Tupi
+Um simples micro-SaaS para encurtar URLs.
+
+# Publicado em produção no link:
+http://www.tupi.link/
